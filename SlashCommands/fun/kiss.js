@@ -5,12 +5,6 @@ module.exports = {
     description: '〔🎉 Diversão〕Beije um usuário!',
     type: 'CHAT_INPUT',
     options: [
-        /*{
-            name: "user1",
-            type: 6,
-            description: "Mencione o usuário que você quer beijar",
-            required: true
-        },*/
         {
             name: "user",
             type: 6,
@@ -22,15 +16,11 @@ module.exports = {
 
     run: async(client, interaction, args) => {
 
-        if(membro_2 === client.user.id) {
-            interaction.reply('💢')
-        } else {
+        var membro_1 = await interaction.options.getUser('user0') || interaction.user
 
-        var membro_1 = await interaction.options.getUser('user0') || interaction.user /*interaction.users.cache.get(args[0]);*/
+        var membro_2 = await interaction.options.getUser('user') || interaction.user 
 
-        var membro_2 = await interaction.options.getUser('user') || interaction.user /*interaction.users.cache.get(args[1]);*/
-
-        var user1 = await interaction.options.getUser('user1') || interaction.user /*interaction.guild.members.cache.get(args[0])*/
+        var user1 = await interaction.options.getUser('user1') || interaction.user 
 
         if(!user1) return interaction.reply('Mencione um usuário para poder beija-lo.');
 
@@ -46,11 +36,8 @@ module.exports = {
 
         var rand = gif[Math.floor(Math.random() * gif.length)];
         
-        /*if(inte !== '878029246793134131') return message.react('💢')*/
 
-
-
-       var membro_1 = interaction.user;
+        var membro_1 = interaction.user;
      
             const embed = new MessageEmbed()
             .setTitle('❤ O amor está fluindo ❤')
@@ -61,13 +48,5 @@ module.exports = {
 
             interaction.reply({ embeds: [embed] })
         
-    } 
     }
 }
-
-/*if (membro_1 && !membro_2) {
-
-    membro_2 = message.author;
-    if (membro_1 === membro_2) membro_2 = message.author;
-}*/      
-
