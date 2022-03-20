@@ -4,16 +4,6 @@ module.exports = {
     name: "serverinfo",
     description:'〔⚙ Utilidade〕Veja informações sobre o servidor!',
     type: 'CHAT_INPUT',
-   /* options: [
-        {
-            name: "user",
-            type: "STRING",
-            description: "",
-            required: true
-            
-        }
-    
-    ],*/
 
     run: async(client, interaction, args) => {
 
@@ -33,7 +23,6 @@ module.exports = {
         var onwer = ['474956360891629578']
       /*  const server = interaction.guild*/
         
-       
 
     const embed = new MessageEmbed()
         .setColor(interaction.member.displayColor)
@@ -43,28 +32,28 @@ module.exports = {
         .setThumbnail(`${interaction.guild.iconURL({ dynamic: true })}`)
         .addFields(
             {
-                name: `<:ID:944450978432843797> ID do servidor:`,
+                name: `🆔 ID do servidor:`,
                 value: `\`${server_id}\``,
                 inline: true
             },
             {
-                name: '<:Owner:946152025916342322> Dono',
+                name: '👑 Dono',
                 value: `\`${dono.user.tag}\``,
                 inline: true
             },
             {
-                name: `<:channel_icon:948653298645344326> Canais (${canais}):`,
+                name: `💬 Canais (${canais}):`,
                 value: `Canais de texto: \`${chats}\`\nCalls: \`${calls}\``,
                 inline: true
             },
             {
-                name: `<:users:946526636059263017> Membros`,
+                name: `👥 Membros`,
                 value: `\`${membro}\` membros.`,
                 inline: true
             },
            
             {
-                name: `<a:booster_evolution:948651376139968562> Impulsos:`,
+                name: `💨 Impulsos:`,
                 value: `\`${impulsos}\` Impulsos.`,
                 inline: true
             },
@@ -85,17 +74,12 @@ module.exports = {
             },
         );
 
-    
-
-        
         try {
             interaction.reply({ embeds: [embed] })
 
 } catch (error) {
     interaction.reply(error)
 }
-        
-       
-        
+           
     }
 }
