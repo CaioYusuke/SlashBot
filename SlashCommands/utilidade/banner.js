@@ -18,9 +18,9 @@
         ],
          
           /**
-           * @param {Client} client
-           * @param {CommandInteraction} interaction
-           * @param {String[]} args
+           * @param { Client } client
+           * @param { CommandInteraction } interaction
+           * @param { String[] } args
            */
       
           run: async(client, interaction, args) => {
@@ -44,7 +44,6 @@
       
               const bannerimg = new MessageEmbed()
               .setTitle(`🖼️ Banner de ${user.username}`)
-              /*.setDescription(`**[Banner de ${user.username}](${url})**`)*/
               .setImage(`${url}`)
               .setColor(interaction.member.displayColor)
               .setFooter(`• Autor: ${interaction.member.user.tag}`, interaction.user.displayAvatarURL({format: "png"}));
@@ -59,10 +58,7 @@
                .setLabel('Abrir imagem no navegador')
                .setURL(`${url}`)
       )
-      
-          /*if(banner !== user) return message.reply(`${message.author} você não possui um banner!`, {ephemeral: true})*/
-      
-      
+    
               interaction.reply({embeds: [bannerimg], components: [button]})
               }else {
                   const embeddanger = new MessageEmbed()
