@@ -9,7 +9,7 @@ module.exports = {
         const embed = new MessageEmbed()
         .setTitle('Me adicione!')
         .setThumbnail('https://i.imgur.com/iE2RDHy.png')
-       .setDescription(`Olá, eu me chamo Ayara e sou um bot focado em moderação e utilidade. Para me adicionar clique no botão abaixo:`)*
+        .setDescription(`Olá, eu me chamo Ayara e sou um bot focado em moderação e utilidade. Para me adicionar clique no botão abaixo:`)
         .setColor(interaction.member.displayColor)
 
         const row = new MessageActionRow()
