@@ -17,25 +17,6 @@ module.exports = {
         const Target = await interaction.options.getUser('user') || interaction.user
 
 
-        const flags = Target.flags.toArray()
-/*
-        if(flags == 'HOUSE_BALANCE') {
-            const flags = ('<:HOUSE_BALANCE:946199665907494933>')
-            
-         
-        }else if(flags == 'HOUSE_BRILLIANCE')  {
-        const flags = (`<:HOUSE_BRILLIANCE:946199752381456424>`)
-       
-
-        }else if(flags == 'HOUSE_BRAVERY') {
-            const flags = ('<:HOUSE_BRAVERY:946199626044833822>')
-            
-    }
-   */
-
-            
-       
-
         const Member = interaction.guild.members.cache.get(Target.id)
 
         try {
@@ -68,12 +49,8 @@ module.exports = {
                     inline: true
                 },
             )
-            /*.addField('**<:discord:940759825946660954> Discord tag**', `\n\` ${Target.tag} \``, false) 
-            .addField('**🆔 Discord ID**', `\n\` ${Target.id}  \``, false) */
+         
             .addField('**💼 Cargos**', `${Member.roles.cache.map(r => r).join(' ').replace('@everyone' , '')}`)
-            /*.addField('🚪**Entrou no servidor em:**🚪**Entrou no servidor em:**', `${moment(Member.joinedAt).format('MMMM  Do YYYY , h:mm:ss  a')}\n**➠** ${moment(Member.joinedAt).startOf('day').fromNow()}`)
-            .addField('📅 **Conta criada há**', `${moment(Target.createdAt).format('MMMM Do YYYY, h:mm:ss a')}\n**➠** ${moment(Target.createdAt).startOf('day').fromNow()}`)
-            /*.addField('📅 **Conta criada há**', `${moment(Target.createdAt).format('MMMM Do YYYY, h:mm:ss a')}\n**➠** ${moment(Target.createdAt).startOf('day').fromNow()}`)*/
             .setFooter(`• Autor: ${interaction.user.tag}`, interaction.user.displayAvatarURL({format: "png"}))
             .setTimestamp()
     
