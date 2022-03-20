@@ -19,7 +19,6 @@ run: async(client, interaction, args) => {
 
   const user = await interaction.options.getUser('user') || interaction.user
 
-
  const embed = new MessageEmbed()
   .setAuthor(user.tag, user.displayAvatarURL({dynamic: true}))
   .setImage(user.displayAvatarURL({ size: 1024, format: 'png', dynamic: true}))
@@ -39,8 +38,6 @@ const button = new MessageActionRow()
 )
 
  interaction.reply({embeds: [embed], components: [button] })
-
- 
 
 }
 
