@@ -15,8 +15,7 @@ module.exports = {
     ],
 
     run: async(client, interaction, args) => {
-
-        
+  
         var membro_1 = await interaction.options.getUser('user0') || interaction.user 
 
         var membro_2 = await interaction.options.getUser('user') || interaction.user 
@@ -37,12 +36,11 @@ module.exports = {
 
         var rand = gif[Math.floor(Math.random() * gif.length)];
         
-
        var membro_1 = interaction.user;
      
             const embed = new MessageEmbed()
             .setTitle('🎈 Parece que alguém está carente 🎈')
-            .setColor("#219100")
+            .setColor(interaction.member.displayColor)
             .setDescription(`**${membro_1} abraçou ${membro_2}**`)
             .setImage(`${rand}`)
           
@@ -52,10 +50,5 @@ module.exports = {
             
     }
 }
-
-/*if (membro_1 && !membro_2) {
-
-    membro_2 = message.author;
-    if (membro_1 === membro_2) membro_2 = message.author;
-}*/      
+     
 
