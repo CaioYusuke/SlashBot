@@ -1,2 +1,2 @@
 # SlashBot
-Apenas um bot em slash
+Apenas um bot em slash.
