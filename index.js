@@ -6,7 +6,7 @@ client.login(config.token);
 
 client.once('ready', async () => {
 
-    console.log("✅ - Logado em "+client.user.username+" com sucesso!")
+    console.log(" O bot "+client.user.username+" está online!")
     client.user.setStatus('idle');
     client.user.setActivity('prefixo /', { type: 'WATCHING' });
 
