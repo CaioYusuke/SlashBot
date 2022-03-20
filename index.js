@@ -1,6 +1,5 @@
-// npm i discord.js glob util
-const Discord = require("discord.js"); 
-const client = new Discord.Client({intents: 32767});
+const Discord = require("discord.js"); //npm i discord.js
+const client = new Discord.Client({intents: 32767}); 
 const config = require("./config.json"); 
 
 client.login(config.token); 
@@ -20,8 +19,8 @@ client.commands = new Discord.Collection();
 client.slashCommands = new Discord.Collection();
 client.config = require("./config.json");
 require("./handler")(client);
-const { glob } = require("glob");
-const { promisify } = require("util");
+const { glob } = require("glob"); //npm i glob
+const { promisify } = require("util"); //npm i util
 
 const globPromise = promisify(glob);
 
