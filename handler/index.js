@@ -4,7 +4,7 @@ const { Client } = require("discord.js");
 const globPromise = promisify(glob);
 
 /**
- * @param {Client} client
+ * @param { Client } client
  */
 module.exports = async (client) => {
 
