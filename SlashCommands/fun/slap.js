@@ -16,14 +16,12 @@ module.exports = {
 
     run: async(client, interaction, args) => {
 
-        var membro_1 = await interaction.options.getUser('user3') || interaction.user /*interaction.users.cache.get(args[0]);*/
+        var membro_1 = await interaction.options.getUser('user3') || interaction.user 
 
-        var membro_2 = await interaction.options.getUser('user') || interaction.user /*interaction.users.cache.get(args[1]);*/
+        var membro_2 = await interaction.options.getUser('user') || interaction.user 
 
-        var user1 = await interaction.options.getUser('user0') || interaction.user /*interaction.guild.members.cache.get(args[0])*/
-
-
-       /* if(interaction.user == '878029246793134131') return interaction.reply('💢')*/
+        var user1 = await interaction.options.getUser('user0') || interaction.user 
+        
 
         if(!user1) return interaction.reply('Mencione um usuário para poder bater no mesmo.');
 
@@ -55,10 +53,3 @@ module.exports = {
             
     }
 }
-
-/*if (membro_1 && !membro_2) {
-
-    membro_2 = message.author;
-    if (membro_1 === membro_2) membro_2 = message.author;
-}*/      
-
