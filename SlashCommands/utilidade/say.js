@@ -26,7 +26,7 @@ module.exports = {
         interaction.channel.send({embeds: [embed]})
             
         } catch (error) {
-        
+            interaction.reply(error)
         }
         
     }
