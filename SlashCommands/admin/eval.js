@@ -17,7 +17,6 @@ module.exports = {
     
     ],
                 run: async(client, interaction, args) => {
-                    //Eval Command(Not to be made public btw!)
                     if (interaction.member.user.id != owner) {
                       return interaction.reply({content: "Apenas o meu criador pode usar este comando!", ephemeral: true})
                     }
@@ -36,7 +35,7 @@ module.exports = {
                           .setTitle('<:ayaokay:938652611807158294> Finaly!')
                           .addField("Input", `\`\`\`js\n${code}\`\`\``)
                           .addField("Output", `\`\`\`js\n${evaled}\`\`\``)
-                          .setColor("#219100")
+                          .setColor(interaction.member.displayColor)
                 
                         interaction.reply({embeds: [embed]});
                       } catch (err) {
