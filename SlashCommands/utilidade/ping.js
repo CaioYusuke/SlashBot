@@ -10,7 +10,7 @@ module.exports =  {
         var ping = client.ws.ping
 
         const embed = new MessageEmbed()
-        .setColor("#219100")
+        .setColor(interaction.member.displayColor)
         .setDescription(`🏓 **|** O meu ping está em \`${ping}ms\`.`);
 
         interaction.reply({embeds: [embed]})
