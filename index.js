@@ -10,8 +10,6 @@ client.once('ready', async () => {
     client.user.setStatus('idle');
     client.user.setActivity('prefixo /', { type: 'WATCHING' });
 
-
-
 })
 
 module.exports = client;
