@@ -18,13 +18,13 @@ module.exports = {
 ],
 
     run: async(client, interaction, args) => {
-if (!interaction.member.permissions.has("BAN_MEMBERS")) return interaction.reply({ content: `<:tick_Nao:903115700510527510> **|** ${interaction.user} Você precisa da permissão \`BANIR_MEMBROS\` para poder utilizar este comando!` , ephemeral: true });
+if (!interaction.member.permissions.has("BAN_MEMBERS")) return interaction.reply({ content: `❌ **|** ${interaction.user} Você precisa da permissão \`BANIR_MEMBROS\` para poder utilizar este comando!` , ephemeral: true });
         
         	var user = interaction.options.getUser('user') || interaction.user
         
-            if(user.id == interaction.user.id) return interaction.reply({content: `Você não pode se avisar!`, ephemeral: true});
-            if(user.id == interaction.guild.me.id) return interaction.reply({content: `Você não pode me avisar!`, ephemeral: true});
-            if(user.id == interaction.guild.ownerId) return  interaction.reply({content: `Você não pode avisar o dono do server!`, ephemeral: true});
+            if(user.id == interaction.user.id) return interaction.reply({content: `❌ **|** Você não pode se avisar!`, ephemeral: true});
+            if(user.id == interaction.guild.me.id) return interaction.reply({content: `❌ **|** Você não pode me avisar!`, ephemeral: true});
+            if(user.id == interaction.guild.ownerId) return  interaction.reply({content: `❌ **|** Você não pode avisar o dono do server!`, ephemeral: true});
 
         var staff = interaction.member.user
         var guild = interaction.guild.name
@@ -34,6 +34,6 @@ if (!interaction.member.permissions.has("BAN_MEMBERS")) return interaction.reply
 
         interaction.reply(`<:ban:938587109198028822> **|** ${interaction.user} o infrator foi avisado com sucesso.`)
 
-        user.send(`⚠️ **|** Você foi avisado em **${guild}** pelo staff: ${staff}. \n\ **Motivo:** ${reason}`)
+        user.send(`⚠ **|** Você foi avisado em **${guild}** pelo staff: ${staff}. \n\ **Motivo:** ${reason}`)
     }
 }
