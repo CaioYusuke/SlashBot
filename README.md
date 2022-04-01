@@ -1,7 +1,7 @@
 # SlashBot
 Apenas um bot em slash.
 
-# Commands
+# Início
 Primeiramente vá ao seu terminal e digite `npm init -y` para instalar as dependências, posteriormente digite `npm i discord.js`, com isto você estará instalando a biblioteca do discord.js. Feito isto, você irá no `config.json` e inserir o token do seu bot.
 
 ### Outras bibliotecas
