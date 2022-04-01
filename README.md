@@ -6,13 +6,13 @@ Primeiramente vá ao seu terminal e digite `npm init -y` para instalar as depend
 
 ### Outras bibliotecas
 Algumas outras bibliotecas que você deverá instalar.
-```yaml
-npm i quick.db
-npm i axios
-npm i glob
-npm i util
-npm i fs
-npm i ms
+```js
+npm i quick.db = const quick.db = require('quick.db')
+npm i axios = const axios = require('axios') 
+npm i glob = const glob = require('glob')
+npm i util = const util = require('util')
+npm i fs = const fs = require('fs')
+npm i ms = const ms = require('ms')
 ```
 
 <hr>
