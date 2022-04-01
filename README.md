@@ -1,7 +1,7 @@
 # SlashBot
 Apenas um bot em slash.
 
-[![PHP Discorders](https://cdn.discordapp.com/icons/847855179860410429/c827d93a90d3b9b4777748f4112be4f3.png?size=2048)](https://discord.gg/QwDk3PRkQR)
+//[![PHP Discorders](https://cdn.discordapp.com/icons/847855179860410429/c827d93a90d3b9b4777748f4112be4f3.png?size=2048)](https://discord.gg/QwDk3PRkQR)*/
 
 # Início
 Primeiramente vá ao seu terminal e digite `npm init -y` para instalar as dependências, posteriormente digite `npm i discord.js`, com isto você estará instalando a biblioteca do discord.js. Feito isto, você irá no `config.json` e inserir o token do seu bot.
