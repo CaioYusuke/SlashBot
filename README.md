@@ -12,6 +12,7 @@ npm i axios
 npm i glob
 npm i util
 npm i fs
+npm i ms
 ```
 
 <hr>
