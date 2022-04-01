@@ -6,7 +6,7 @@ Primeiramente vá ao seu terminal e digite `npm init -y` para instalar as depend
 
 ### Outras bibliotecas
 Algumas outras bibliotecas que você deverá instalar.
-```js
+```yaml
 npm i quick.db 
 npm i axios
 npm i glob
