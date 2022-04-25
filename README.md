@@ -14,6 +14,8 @@ npm i util
 npm i fs 
 npm i ms 
 ```
+##Servidor de suporte
+<iframe src="https://discord.com/widget?id=847855179860410429&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
 
 <hr>
 
