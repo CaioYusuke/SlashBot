@@ -36,7 +36,6 @@ module.exports =  {
 
         var usuario = interaction.options.getUser('infrator') || interaction.user || interaction.guild.members.cache.get(args[0]);
         var tempo = args[1];
-        /*var motivo = args.slice(2).join(" ") && interaction.options.getString('reason')*/
         var guild = interaction.member.guild
         var staff = interaction.user
         var reason = args.join(" ") && interaction.options.getString('motivo')
