@@ -4,7 +4,7 @@ const { MessageEmbed } = require("discord.js")
 
 module.exports =  {
     name: "castigo",
-    description: '〔⚔ Moderação〕Mute um infrator.',
+    description: '[⚔ Moderação] Mute um infrator.',
     type: 'CHAT_INPUT',
     options: [{
         name: 'infrator',
