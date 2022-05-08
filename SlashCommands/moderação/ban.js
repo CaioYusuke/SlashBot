@@ -2,7 +2,7 @@ const { MessageEmbed } = require('discord.js')
 
 module.exports = {
     name: 'ban',
-    description: '〔⚔ Moderação〕Este comando bane um usuário.',
+    description: '[⚔ Moderação] Este comando bane um usuário.',
     options: [{
         name: 'user',
         type: 'USER',
