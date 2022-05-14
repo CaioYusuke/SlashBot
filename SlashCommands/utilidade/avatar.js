@@ -2,7 +2,7 @@ const { MessageEmbed, MessageActionRow, MessageButton } = require('discord.js')
 
  module.exports = {
    name: 'avatar',
-   description: '〔⚙ Utilidade〕Veja o seu Avatar ou o de outro usuário.', 
+   description: '[⚙ Utilidade] Veja o seu Avatar ou o de outro usuário.', 
    author: 'eu', 
    type: 'CHAT_INPUT',
    options: [
