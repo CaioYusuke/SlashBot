@@ -1,6 +1,8 @@
 # SlashBot
 Apenas um bot em slash.
 
+<iframe src="https://www.guilded.gg/canvas_index.html?route=%2Fcanvas%2Fembed%2Fbadge%2F8jyJLpOR" width="174" height="48" frameborder="0" scrolling="no"></iframe>
+
 # Início
 Primeiramente vá ao seu terminal e digite `npm init -y` para instalar as dependências, posteriormente digite `npm i discord.js`, com isto você estará instalando a biblioteca do discord.js. Feito isto, você irá no `config.json` e inserir o token do seu bot.
 
